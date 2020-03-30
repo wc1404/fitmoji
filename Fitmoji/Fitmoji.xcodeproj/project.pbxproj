@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B13E3A9242C0F15008EECBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3A8242C0F15008EECBE /* AppDelegate.swift */; };
+		7B13E3AB242C0F15008EECBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */; };
+		7B13E3AD242C0F15008EECBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3AC242C0F15008EECBE /* ViewController.swift */; };
+		7B13E3B0242C0F15008EECBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B13E3AE242C0F15008EECBE /* Main.storyboard */; };
+		7B13E3B2242C0F17008EECBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B13E3B1242C0F17008EECBE /* Assets.xcassets */; };
+		7B13E3B5242C0F17008EECBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B13E3B3242C0F17008EECBE /* LaunchScreen.storyboard */; };
+		7B13E3C0242C0F17008EECBE /* FitmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3BF242C0F17008EECBE /* FitmojiTests.swift */; };
+		7B13E3CB242C0F17008EECBE /* FitmojiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */; };
+		7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0705242FC2C800DC6B99 /* UserCell.xib */; };
+		7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B13E3BC242C0F17008EECBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B13E39D242C0F15008EECBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B13E3A4242C0F15008EECBE;
+			remoteInfo = Fitmoji;
+		};
+		7B13E3C7242C0F17008EECBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B13E39D242C0F15008EECBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B13E3A4242C0F15008EECBE;
+			remoteInfo = Fitmoji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B13E3A5242C0F15008EECBE /* Fitmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13E3A8242C0F15008EECBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B13E3AC242C0F15008EECBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B13E3AF242C0F15008EECBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B13E3B1242C0F17008EECBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B13E3B4242C0F17008EECBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B13E3B6242C0F17008EECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B13E3BB242C0F17008EECBE /* FitmojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitmojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13E3BF242C0F17008EECBE /* FitmojiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiTests.swift; sourceTree = "<group>"; };
+		7B13E3C1242C0F17008EECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B13E3C6242C0F17008EECBE /* FitmojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitmojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiUITests.swift; sourceTree = "<group>"; };
+		7B13E3CC242C0F17008EECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF0705242FC2C800DC6B99 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B13E3A2242C0F15008EECBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3B8242C0F17008EECBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3C3242C0F17008EECBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B13E39C242C0F15008EECBE = {
+			isa = PBXGroup;
+			children = (
+				7B13E3A7242C0F15008EECBE /* Fitmoji */,
+				7B13E3BE242C0F17008EECBE /* FitmojiTests */,
+				7B13E3C9242C0F17008EECBE /* FitmojiUITests */,
+				7B13E3A6242C0F15008EECBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B13E3A6242C0F15008EECBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B13E3A5242C0F15008EECBE /* Fitmoji.app */,
+				7B13E3BB242C0F17008EECBE /* FitmojiTests.xctest */,
+				7B13E3C6242C0F17008EECBE /* FitmojiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B13E3A7242C0F15008EECBE /* Fitmoji */ = {
+			isa = PBXGroup;
+			children = (
+				7B13E3A8242C0F15008EECBE /* AppDelegate.swift */,
+				7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */,
+				7B13E3AC242C0F15008EECBE /* ViewController.swift */,
+				7B13E3AE242C0F15008EECBE /* Main.storyboard */,
+				7BDF0705242FC2C800DC6B99 /* UserCell.xib */,
+				7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */,
+				7B13E3B1242C0F17008EECBE /* Assets.xcassets */,
+				7B13E3B3242C0F17008EECBE /* LaunchScreen.storyboard */,
+				7B13E3B6242C0F17008EECBE /* Info.plist */,
+				7B13E3D9242C1063008EECBE /* backend */,
+				7B13E3D8242C105D008EECBE /* frontend */,
+			);
+			path = Fitmoji;
+			sourceTree = "<group>";
+		};
+		7B13E3BE242C0F17008EECBE /* FitmojiTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B13E3BF242C0F17008EECBE /* FitmojiTests.swift */,
+				7B13E3C1242C0F17008EECBE /* Info.plist */,
+			);
+			path = FitmojiTests;
+			sourceTree = "<group>";
+		};
+		7B13E3C9242C0F17008EECBE /* FitmojiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */,
+				7B13E3CC242C0F17008EECBE /* Info.plist */,
+			);
+			path = FitmojiUITests;
+			sourceTree = "<group>";
+		};
+		7B13E3D8242C105D008EECBE /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = frontend;
+			sourceTree = "<group>";
+		};
+		7B13E3D9242C1063008EECBE /* backend */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B13E3A4242C0F15008EECBE /* Fitmoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B13E3CF242C0F17008EECBE /* Build configuration list for PBXNativeTarget "Fitmoji" */;
+			buildPhases = (
+				7B13E3A1242C0F15008EECBE /* Sources */,
+				7B13E3A2242C0F15008EECBE /* Frameworks */,
+				7B13E3A3242C0F15008EECBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fitmoji;
+			productName = Fitmoji;
+			productReference = 7B13E3A5242C0F15008EECBE /* Fitmoji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B13E3BA242C0F17008EECBE /* FitmojiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B13E3D2242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiTests" */;
+			buildPhases = (
+				7B13E3B7242C0F17008EECBE /* Sources */,
+				7B13E3B8242C0F17008EECBE /* Frameworks */,
+				7B13E3B9242C0F17008EECBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B13E3BD242C0F17008EECBE /* PBXTargetDependency */,
+			);
+			name = FitmojiTests;
+			productName = FitmojiTests;
+			productReference = 7B13E3BB242C0F17008EECBE /* FitmojiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B13E3C5242C0F17008EECBE /* FitmojiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B13E3D5242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiUITests" */;
+			buildPhases = (
+				7B13E3C2242C0F17008EECBE /* Sources */,
+				7B13E3C3242C0F17008EECBE /* Frameworks */,
+				7B13E3C4242C0F17008EECBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B13E3C8242C0F17008EECBE /* PBXTargetDependency */,
+			);
+			name = FitmojiUITests;
+			productName = FitmojiUITests;
+			productReference = 7B13E3C6242C0F17008EECBE /* FitmojiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B13E39D242C0F15008EECBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "John Martinez";
+				TargetAttributes = {
+					7B13E3A4242C0F15008EECBE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					7B13E3BA242C0F17008EECBE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7B13E3A4242C0F15008EECBE;
+					};
+					7B13E3C5242C0F17008EECBE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 7B13E3A4242C0F15008EECBE;
+					};
+				};
+			};
+			buildConfigurationList = 7B13E3A0242C0F15008EECBE /* Build configuration list for PBXProject "Fitmoji" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B13E39C242C0F15008EECBE;
+			productRefGroup = 7B13E3A6242C0F15008EECBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B13E3A4242C0F15008EECBE /* Fitmoji */,
+				7B13E3BA242C0F17008EECBE /* FitmojiTests */,
+				7B13E3C5242C0F17008EECBE /* FitmojiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B13E3A3242C0F15008EECBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */,
+				7B13E3B5242C0F17008EECBE /* LaunchScreen.storyboard in Resources */,
+				7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */,
+				7B13E3B2242C0F17008EECBE /* Assets.xcassets in Resources */,
+				7B13E3B0242C0F15008EECBE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3B9242C0F17008EECBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3C4242C0F17008EECBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B13E3A1242C0F15008EECBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B13E3AD242C0F15008EECBE /* ViewController.swift in Sources */,
+				7B13E3A9242C0F15008EECBE /* AppDelegate.swift in Sources */,
+				7B13E3AB242C0F15008EECBE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3B7242C0F17008EECBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B13E3C0242C0F17008EECBE /* FitmojiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B13E3C2242C0F17008EECBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B13E3CB242C0F17008EECBE /* FitmojiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B13E3BD242C0F17008EECBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B13E3A4242C0F15008EECBE /* Fitmoji */;
+			targetProxy = 7B13E3BC242C0F17008EECBE /* PBXContainerItemProxy */;
+		};
+		7B13E3C8242C0F17008EECBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B13E3A4242C0F15008EECBE /* Fitmoji */;
+			targetProxy = 7B13E3C7242C0F17008EECBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B13E3AE242C0F15008EECBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B13E3AF242C0F15008EECBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B13E3B3242C0F17008EECBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B13E3B4242C0F17008EECBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B13E3CD242C0F17008EECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B13E3CE242C0F17008EECBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B13E3D0242C0F17008EECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = Fitmoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.Fitmoji";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B13E3D1242C0F17008EECBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = Fitmoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.Fitmoji";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B13E3D3242C0F17008EECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = FitmojiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.FitmojiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitmoji.app/Fitmoji";
+			};
+			name = Debug;
+		};
+		7B13E3D4242C0F17008EECBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = FitmojiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.FitmojiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitmoji.app/Fitmoji";
+			};
+			name = Release;
+		};
+		7B13E3D6242C0F17008EECBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = FitmojiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.FitmojiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitmoji;
+			};
+			name = Debug;
+		};
+		7B13E3D7242C0F17008EECBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U43874FL4B;
+				INFOPLIST_FILE = FitmojiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Martinez.FitmojiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitmoji;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B13E3A0242C0F15008EECBE /* Build configuration list for PBXProject "Fitmoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B13E3CD242C0F17008EECBE /* Debug */,
+				7B13E3CE242C0F17008EECBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B13E3CF242C0F17008EECBE /* Build configuration list for PBXNativeTarget "Fitmoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B13E3D0242C0F17008EECBE /* Debug */,
+				7B13E3D1242C0F17008EECBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B13E3D2242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B13E3D3242C0F17008EECBE /* Debug */,
+				7B13E3D4242C0F17008EECBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B13E3D5242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B13E3D6242C0F17008EECBE /* Debug */,
+				7B13E3D7242C0F17008EECBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B13E39D242C0F15008EECBE /* Project object */;
+}
