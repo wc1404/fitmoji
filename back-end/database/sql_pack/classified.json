@@ -1,0 +1,12 @@
+[{
+	"credentials": {
+		"user": "", 
+		"password": ""
+	}, 
+	"database": {
+		"host": "", 
+		"db": "",
+		"charset": "",
+		"port": 3306
+	}
+}]
