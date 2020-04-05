@@ -15,6 +15,20 @@
 		7B13E3B5242C0F17008EECBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B13E3B3242C0F17008EECBE /* LaunchScreen.storyboard */; };
 		7B13E3C0242C0F17008EECBE /* FitmojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3BF242C0F17008EECBE /* FitmojiTests.swift */; };
 		7B13E3CB242C0F17008EECBE /* FitmojiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */; };
+		7B884BE72437D93000517F0F /* FitmojiLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BE62437D93000517F0F /* FitmojiLoginViewController.swift */; };
+		7B884BE92437DA5D00517F0F /* FitmojiChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BE82437DA5D00517F0F /* FitmojiChoiceViewController.swift */; };
+		7B884BEC2437E0C500517F0F /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BEB2437E0C500517F0F /* ExercisesViewController.swift */; };
+		7B884BEE2437E24200517F0F /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BED2437E24200517F0F /* ExerciseCell.swift */; };
+		7B884BF12438CEB700517F0F /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BF02438CEB700517F0F /* FriendsViewController.swift */; };
+		7B884BF32438D0E600517F0F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BF22438D0E600517F0F /* UserCell.swift */; };
+		7B884BF52439093000517F0F /* FriendRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BF42439093000517F0F /* FriendRequestsViewController.swift */; };
+		7B884BF724391A7C00517F0F /* UserSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B884BF624391A7C00517F0F /* UserSearchViewController.swift */; };
+		7B9D199A24395F35003206B4 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D199924395F35003206B4 /* LeaderboardViewController.swift */; };
+		7B9D199C243967FD003206B4 /* ChallengeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B9D199B243967FD003206B4 /* ChallengeCell.xib */; };
+		7B9D199E243A5107003206B4 /* ChallengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D199D243A5107003206B4 /* ChallengersViewController.swift */; };
+		7B9D19A0243A5542003206B4 /* ChallengeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D199F243A5542003206B4 /* ChallengeCell.swift */; };
+		7B9D19A2243A5BB1003206B4 /* ChallengesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D19A1243A5BB1003206B4 /* ChallengesViewController.swift */; };
+		7B9D19A4243A6BF6003206B4 /* NewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */; };
 		7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0705242FC2C800DC6B99 /* UserCell.xib */; };
 		7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +65,20 @@
 		7B13E3C6242C0F17008EECBE /* FitmojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitmojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiUITests.swift; sourceTree = "<group>"; };
 		7B13E3CC242C0F17008EECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B884BE62437D93000517F0F /* FitmojiLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiLoginViewController.swift; sourceTree = "<group>"; };
+		7B884BE82437DA5D00517F0F /* FitmojiChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiChoiceViewController.swift; sourceTree = "<group>"; };
+		7B884BEB2437E0C500517F0F /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
+		7B884BED2437E24200517F0F /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		7B884BF02438CEB700517F0F /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		7B884BF22438D0E600517F0F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		7B884BF42439093000517F0F /* FriendRequestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsViewController.swift; sourceTree = "<group>"; };
+		7B884BF624391A7C00517F0F /* UserSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewController.swift; sourceTree = "<group>"; };
+		7B9D199924395F35003206B4 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		7B9D199B243967FD003206B4 /* ChallengeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChallengeCell.xib; sourceTree = "<group>"; };
+		7B9D199D243A5107003206B4 /* ChallengersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengersViewController.swift; sourceTree = "<group>"; };
+		7B9D199F243A5542003206B4 /* ChallengeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeCell.swift; sourceTree = "<group>"; };
+		7B9D19A1243A5BB1003206B4 /* ChallengesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewController.swift; sourceTree = "<group>"; };
+		7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewController.swift; sourceTree = "<group>"; };
 		7BDF0705242FC2C800DC6B99 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,13 +135,16 @@
 				7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */,
 				7B13E3AC242C0F15008EECBE /* ViewController.swift */,
 				7B13E3AE242C0F15008EECBE /* Main.storyboard */,
+				7B9D199B243967FD003206B4 /* ChallengeCell.xib */,
 				7BDF0705242FC2C800DC6B99 /* UserCell.xib */,
 				7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */,
 				7B13E3B1242C0F17008EECBE /* Assets.xcassets */,
 				7B13E3B3242C0F17008EECBE /* LaunchScreen.storyboard */,
 				7B13E3B6242C0F17008EECBE /* Info.plist */,
-				7B13E3D9242C1063008EECBE /* backend */,
-				7B13E3D8242C105D008EECBE /* frontend */,
+				7B9D199824395F26003206B4 /* challenges */,
+				7B884BEF2438CD6C00517F0F /* friends */,
+				7B884BEA2437E0A100517F0F /* exercises */,
+				7B884BE52437CF7400517F0F /* profile */,
 			);
 			path = Fitmoji;
 			sourceTree = "<group>";
@@ -136,18 +167,45 @@
 			path = FitmojiUITests;
 			sourceTree = "<group>";
 		};
-		7B13E3D8242C105D008EECBE /* frontend */ = {
+		7B884BE52437CF7400517F0F /* profile */ = {
 			isa = PBXGroup;
 			children = (
+				7B884BE62437D93000517F0F /* FitmojiLoginViewController.swift */,
+				7B884BE82437DA5D00517F0F /* FitmojiChoiceViewController.swift */,
 			);
-			path = frontend;
+			path = profile;
 			sourceTree = "<group>";
 		};
-		7B13E3D9242C1063008EECBE /* backend */ = {
+		7B884BEA2437E0A100517F0F /* exercises */ = {
 			isa = PBXGroup;
 			children = (
+				7B884BEB2437E0C500517F0F /* ExercisesViewController.swift */,
+				7B884BED2437E24200517F0F /* ExerciseCell.swift */,
 			);
-			path = backend;
+			path = exercises;
+			sourceTree = "<group>";
+		};
+		7B884BEF2438CD6C00517F0F /* friends */ = {
+			isa = PBXGroup;
+			children = (
+				7B884BF02438CEB700517F0F /* FriendsViewController.swift */,
+				7B884BF22438D0E600517F0F /* UserCell.swift */,
+				7B884BF42439093000517F0F /* FriendRequestsViewController.swift */,
+				7B884BF624391A7C00517F0F /* UserSearchViewController.swift */,
+			);
+			path = friends;
+			sourceTree = "<group>";
+		};
+		7B9D199824395F26003206B4 /* challenges */ = {
+			isa = PBXGroup;
+			children = (
+				7B9D199924395F35003206B4 /* LeaderboardViewController.swift */,
+				7B9D19A1243A5BB1003206B4 /* ChallengesViewController.swift */,
+				7B9D199D243A5107003206B4 /* ChallengersViewController.swift */,
+				7B9D199F243A5542003206B4 /* ChallengeCell.swift */,
+				7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */,
+			);
+			path = challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */,
+				7B9D199C243967FD003206B4 /* ChallengeCell.xib in Resources */,
 				7B13E3B5242C0F17008EECBE /* LaunchScreen.storyboard in Resources */,
 				7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */,
 				7B13E3B2242C0F17008EECBE /* Assets.xcassets in Resources */,
@@ -283,8 +342,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B884BF12438CEB700517F0F /* FriendsViewController.swift in Sources */,
+				7B9D19A2243A5BB1003206B4 /* ChallengesViewController.swift in Sources */,
+				7B884BE92437DA5D00517F0F /* FitmojiChoiceViewController.swift in Sources */,
+				7B884BE72437D93000517F0F /* FitmojiLoginViewController.swift in Sources */,
+				7B884BEC2437E0C500517F0F /* ExercisesViewController.swift in Sources */,
+				7B9D199E243A5107003206B4 /* ChallengersViewController.swift in Sources */,
+				7B9D19A0243A5542003206B4 /* ChallengeCell.swift in Sources */,
+				7B884BF724391A7C00517F0F /* UserSearchViewController.swift in Sources */,
 				7B13E3AD242C0F15008EECBE /* ViewController.swift in Sources */,
+				7B884BF32438D0E600517F0F /* UserCell.swift in Sources */,
+				7B884BF52439093000517F0F /* FriendRequestsViewController.swift in Sources */,
 				7B13E3A9242C0F15008EECBE /* AppDelegate.swift in Sources */,
+				7B884BEE2437E24200517F0F /* ExerciseCell.swift in Sources */,
+				7B9D199A24395F35003206B4 /* LeaderboardViewController.swift in Sources */,
+				7B9D19A4243A6BF6003206B4 /* NewChallengeViewController.swift in Sources */,
 				7B13E3AB242C0F15008EECBE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
