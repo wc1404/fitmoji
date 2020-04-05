@@ -18,12 +18,16 @@ with open('classified.json', 'r') as top_secret_stuff:
 chdir(cwd)
 
 def create_conn():
-	conn = mysql.connector.connect(host=data['database']['host'],
-											port = data['database']['port'],
-											user=data['credentials']['user'],
-											password=data['credentials']['password'],
-											db=data['database']['db'],
-											charset=data['database']['charset'])
+	
+	conn = mysql.connector.connect( 
+		host = data['database']['host'],
+		port = data['database']['port'],
+		user = data['credentials']['user'],
+		password = data['credentials']['password'],
+		db = data['database']['db'],
+		charset = data['database']['charset']
+	)
+
 	try:
 		if conn.is_connected():
 			db_Info = conn.get_server_info()
