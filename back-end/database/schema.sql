@@ -48,7 +48,7 @@ CREATE TABLE exercise (
   name Varchar(32),
   point_rate Int DEFAULT 1,
   work_load Int DEFAULT 1,
-  PRIMARY KEY (id)
+  PRIMARY KEY (exercise_id)
 );
 
 CREATE TABLE challenge_exercise (
