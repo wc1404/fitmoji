@@ -366,6 +366,47 @@
             </objects>
             <point key="canvasLocation" x="4964" y="-20"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="8Sn-wo-HTW">
+            <objects>
+                <viewController id="AIL-UK-mDQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nbO-hN-ngw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TN8-uJ-H6g">
+                                <rect key="frame" x="88" y="132" width="238" height="373"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwO-j2-yVF">
+                                        <rect key="frame" x="0.0" y="0.0" width="238" height="268"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-0W-81l">
+                                        <rect key="frame" x="77.5" y="300" width="83" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-jw-eq8">
+                                        <rect key="frame" x="95.5" y="352.5" width="47.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="I0k-EF-V5s"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="I6h-1j-SMA"/>
+                    <connections>
+                        <segue destination="8zF-gb-siy" kind="show" id="fvD-W6-xtV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bf-iF-ayk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="247.82608695652175" y="-473.4375"/>
+        </scene>
         <!--Login-->
         <scene sceneID="XWx-3s-tsl">
             <objects>
@@ -400,19 +441,19 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8zF-gb-siy" kind="show" id="pgO-3t-WgC"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="WTj-6I-EnH"/>
                     </view>
                     <navigationItem key="navigationItem" id="lze-bS-BNk"/>
+                    <connections>
+                        <segue destination="AIL-UK-mDQ" kind="show" id="4xE-qU-8WO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTb-bh-vZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1816" y="-1238"/>
+            <point key="canvasLocation" x="-1346" y="-1235"/>
         </scene>
         <!--Bitmoji Login-->
         <scene sceneID="hrH-Tm-UNC">
@@ -429,9 +470,6 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8zF-gb-siy" kind="show" id="0nS-6A-1LP"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitmoji Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQc-ZJ-ra3">
                                 <rect key="frame" x="77" y="239" width="231" height="51"/>
@@ -445,10 +483,13 @@
                         <viewLayoutGuide key="safeArea" id="kRH-jX-wO3"/>
                     </view>
                     <navigationItem key="navigationItem" id="SBk-vf-9dU"/>
+                    <connections>
+                        <segue destination="AIL-UK-mDQ" kind="show" id="nu8-1D-zwk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gAy-cO-kuw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="-425"/>
+            <point key="canvasLocation" x="-1277" y="-473"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Sh2-Lg-QvU">
@@ -635,7 +676,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lym-eZ-Sq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1057" y="-153"/>
+            <point key="canvasLocation" x="-3049" y="-181"/>
         </scene>
         <!--Bitmoji Registration-->
         <scene sceneID="GGT-dY-bG8">
@@ -684,7 +725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="die-6f-WO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-219" y="-153"/>
+            <point key="canvasLocation" x="-2212" y="-181"/>
         </scene>
         <!--Bitmoji Sign Up-->
         <scene sceneID="nLA-aK-8XC">
@@ -701,9 +742,6 @@
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="8zF-gb-siy" kind="show" id="ECQ-Ql-Rzy"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitmoji Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-er-sr2">
                                 <rect key="frame" x="74" y="235" width="267" height="51"/>
@@ -717,10 +755,13 @@
                         <viewLayoutGuide key="safeArea" id="Ksp-4E-23s"/>
                     </view>
                     <navigationItem key="navigationItem" id="jzA-IA-aSO"/>
+                    <connections>
+                        <segue destination="AIL-UK-mDQ" kind="show" id="mmh-Xx-ijN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jXY-B0-qgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="645" y="317"/>
+            <point key="canvasLocation" x="-1346" y="289"/>
         </scene>
         <!--Home-->
         <scene sceneID="Frd-iY-8tF">
@@ -769,7 +810,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZ6-JE-chb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2871" y="-473"/>
+            <point key="canvasLocation" x="-4862" y="-502"/>
         </scene>
         <!--User Registration-->
         <scene sceneID="ox5-Zq-eMJ">
@@ -823,7 +864,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbQ-wh-hb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1815.9420289855075" y="-153.34821428571428"/>
+            <point key="canvasLocation" x="-3807" y="-181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ch6-iP-8iA">
@@ -841,10 +882,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q73-2e-BPl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3917" y="-473"/>
+            <point key="canvasLocation" x="-5907" y="-502"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="0nS-6A-1LP"/>
+        <segue reference="mmh-Xx-ijN"/>
     </inferredMetricsTieBreakers>
 </document>
