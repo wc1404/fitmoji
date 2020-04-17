@@ -1,0 +1,6 @@
+framework module SCSDKStoryKit {
+  umbrella header "SCSDKStoryKit.h"
+
+  export *
+  module * { export * }
+}

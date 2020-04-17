@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework
+${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework
+${PODS_ROOT}/SnapSDK/SCSDKBitmojiKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKCoreKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKCreativeKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKLoginKit.framework
+${PODS_ROOT}/SnapSDK/SCSDKStoryKit.framework

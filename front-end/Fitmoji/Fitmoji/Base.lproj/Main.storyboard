@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JiF-BZ-YdG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JiF-BZ-YdG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -455,42 +455,6 @@
             </objects>
             <point key="canvasLocation" x="-1346" y="-1235"/>
         </scene>
-        <!--Bitmoji Login-->
-        <scene sceneID="hrH-Tm-UNC">
-            <objects>
-                <viewController title="Bitmoji Login" id="noe-UR-zg2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5BL-1R-N80">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plq-1t-F0h">
-                                <rect key="frame" x="121" y="694" width="172" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitmoji Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQc-ZJ-ra3">
-                                <rect key="frame" x="77" y="239" width="231" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="kRH-jX-wO3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SBk-vf-9dU"/>
-                    <connections>
-                        <segue destination="AIL-UK-mDQ" kind="show" id="nu8-1D-zwk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gAy-cO-kuw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1277" y="-473"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="Sh2-Lg-QvU">
             <objects>
@@ -571,7 +535,7 @@
         <!--Health Registration-->
         <scene sceneID="SWy-5x-4iZ">
             <objects>
-                <viewController title="Health Registration" id="LIG-3V-Utb" sceneMemberID="viewController">
+                <viewController title="Health Registration" id="LIG-3V-Utb" customClass="HealthRegisterViewController" customModule="Fitmoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JS1-3i-y4c">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -595,6 +559,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="height:" destination="kUh-fV-ov2" eventType="editingDidEnd" id="azw-jq-m50"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Weight" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLk-cr-WpU">
                                 <rect key="frame" x="222" y="309" width="134" height="34"/>
@@ -609,6 +576,9 @@
                                 <state key="normal" title="Calculate">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateBMI:" destination="LIG-3V-Utb" eventType="touchUpInside" id="GfB-hI-2pF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJo-QT-nvj">
                                 <rect key="frame" x="279" y="370" width="20" height="39"/>
@@ -636,21 +606,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7r-7X-eTZ">
-                                <rect key="frame" x="61" y="603" width="134" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Calculate">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-95-3eE">
-                                <rect key="frame" x="279" y="600" width="20" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Year" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vS9-OH-Br7">
                                 <rect key="frame" x="286" y="539" width="70" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -668,20 +623,52 @@
                                     <segue destination="zb4-ms-mcw" kind="show" id="JKH-wY-HQL"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPx-6V-cYu">
+                                <rect key="frame" x="61" y="609" width="134" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="calcFit:" destination="LIG-3V-Utb" eventType="touchUpInside" id="cAb-Ev-nb0"/>
+                                    <action selector="calculateBMI:" destination="LIG-3V-Utb" eventType="touchUpInside" id="a5Y-cg-z5d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-5M-QDg">
+                                <rect key="frame" x="279" y="606" width="20" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="s1M-DR-wPW"/>
                     </view>
                     <navigationItem key="navigationItem" id="Tqr-zr-M3i"/>
+                    <connections>
+                        <outlet property="bmiButton" destination="SCq-iz-yQF" id="6Lx-eB-U2Q"/>
+                        <outlet property="bmiLabel" destination="iJo-QT-nvj" id="lZO-KW-zdp"/>
+                        <outlet property="continueButton" destination="xJj-ha-VRg" id="Nb6-Pn-5vf"/>
+                        <outlet property="day" destination="cBa-AV-lxr" id="pIp-Xn-ind"/>
+                        <outlet property="fitButton" destination="yPx-6V-cYu" id="eIo-Dt-zOz"/>
+                        <outlet property="fitLabel" destination="hE1-5M-QDg" id="eC9-8z-1Tp"/>
+                        <outlet property="height" destination="GBK-6c-Y3z" id="LdX-wg-pHa"/>
+                        <outlet property="month" destination="zan-Ni-pt4" id="NCj-ZK-R3p"/>
+                        <outlet property="weight" destination="dLk-cr-WpU" id="ouJ-Sc-o6p"/>
+                        <outlet property="year" destination="vS9-OH-Br7" id="rhX-Gf-hcM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lym-eZ-Sq8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kUh-fV-ov2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3049" y="-181"/>
         </scene>
         <!--Bitmoji Registration-->
         <scene sceneID="GGT-dY-bG8">
             <objects>
-                <viewController title="Bitmoji Registration" id="zb4-ms-mcw" sceneMemberID="viewController">
+                <viewController title="Bitmoji Registration" id="zb4-ms-mcw" customClass="BitmojiSDKViewController" customModule="Fitmoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iBu-hP-sRe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -698,23 +685,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Login">
+                                <state key="normal" title="Continue">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="noe-UR-zg2" kind="show" id="3cj-Kf-OdX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-jY-4lD">
-                                <rect key="frame" x="0.0" y="440" width="414" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Sign up">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="wcw-7C-2DH" kind="show" id="Dzf-TJ-oVg"/>
+                                    <action selector="snapLogin:" destination="zb4-ms-mcw" eventType="touchUpInside" id="PaM-nK-KgY"/>
+                                    <action selector="snapLogin:" destination="9aJ-vo-j7M" eventType="touchUpInside" id="ZeL-QA-Jdd"/>
+                                    <segue destination="AIL-UK-mDQ" kind="show" id="D2Q-cE-u6z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -722,46 +699,14 @@
                         <viewLayoutGuide key="safeArea" id="9mW-DJ-Hth"/>
                     </view>
                     <navigationItem key="navigationItem" id="7rX-dI-7FE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="die-6f-WO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2212" y="-181"/>
-        </scene>
-        <!--Bitmoji Sign Up-->
-        <scene sceneID="nLA-aK-8XC">
-            <objects>
-                <viewController title="Bitmoji Sign Up" id="wcw-7C-2DH" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3oY-90-28B">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-RC-bSN">
-                                <rect key="frame" x="121" y="710" width="172" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bitmoji Sign up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg3-er-sr2">
-                                <rect key="frame" x="74" y="235" width="267" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Ksp-4E-23s"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="jzA-IA-aSO"/>
                     <connections>
-                        <segue destination="AIL-UK-mDQ" kind="show" id="mmh-Xx-ijN"/>
+                        <outlet property="loginButton" destination="bWD-N0-Buc" id="5UR-Dn-AFz"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jXY-B0-qgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="die-6f-WO3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9aJ-vo-j7M" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1346" y="289"/>
+            <point key="canvasLocation" x="-2212" y="-181"/>
         </scene>
         <!--Home-->
         <scene sceneID="Frd-iY-8tF">
@@ -815,7 +760,7 @@
         <!--User Registration-->
         <scene sceneID="ox5-Zq-eMJ">
             <objects>
-                <viewController title="User Registration" id="iIB-Lr-FEO" sceneMemberID="viewController">
+                <viewController title="User Registration" id="iIB-Lr-FEO" customClass="AccountRegisterViewController" customModule="Fitmoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bpQ-r7-lqG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -832,6 +777,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="email:" destination="1ko-Aa-zQR" eventType="editingDidEnd" id="yIf-Wp-4W1"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Whats a good username?" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zq-Of-5Gw">
                                 <rect key="frame" x="106" y="357" width="203" height="34"/>
@@ -861,8 +809,15 @@
                         <viewLayoutGuide key="safeArea" id="Eqo-mE-2ta"/>
                     </view>
                     <navigationItem key="navigationItem" id="DKB-Wv-WjU"/>
+                    <connections>
+                        <outlet property="email" destination="neP-Or-929" id="McF-W4-kd7"/>
+                        <outlet property="password" destination="lY1-0L-Pli" id="fjY-m8-ZFs"/>
+                        <outlet property="signupButton" destination="gky-Pz-LGY" id="YXa-Uh-6Ql"/>
+                        <outlet property="username" destination="5zq-Of-5Gw" id="5he-qi-lNo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbQ-wh-hb0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="1ko-Aa-zQR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-3807" y="-181"/>
         </scene>
@@ -886,6 +841,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mmh-Xx-ijN"/>
+        <segue reference="D2Q-cE-u6z"/>
     </inferredMetricsTieBreakers>
 </document>

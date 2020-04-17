@@ -1,0 +1,6 @@
+framework module Pods_Fitmoji_FitmojiUITests {
+  umbrella header "Pods-Fitmoji-FitmojiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

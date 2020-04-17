@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,12 @@
 		7B9D19A4243A6BF6003206B4 /* NewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */; };
 		7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0705242FC2C800DC6B99 /* UserCell.xib */; };
 		7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */; };
+		88106BEA9A1F2480B99DBA71 /* Pods_FitmojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B200090EA56529112241EE3 /* Pods_FitmojiTests.framework */; };
+		AE41EE541D7DDDD620F99508 /* Pods_Fitmoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C9FC7F3D9547E1BD9672E0 /* Pods_Fitmoji.framework */; };
+		D1430EA67ADAFE3DE963649F /* Pods_Fitmoji_FitmojiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2435D8986F0CFD2AF0A693 /* Pods_Fitmoji_FitmojiUITests.framework */; };
+		E08C100924491CD700D953C9 /* BitmojiSDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08C100824491CD700D953C9 /* BitmojiSDKViewController.swift */; };
+		E08C100E2449280A00D953C9 /* AccountRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08C100D2449280A00D953C9 /* AccountRegisterViewController.swift */; };
+		E08C101224492C4500D953C9 /* HealthRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08C101124492C4500D953C9 /* HealthRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F2435D8986F0CFD2AF0A693 /* Pods_Fitmoji_FitmojiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitmoji_FitmojiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4247E774C5A2858468543126 /* Pods-FitmojiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitmojiTests.release.xcconfig"; path = "Target Support Files/Pods-FitmojiTests/Pods-FitmojiTests.release.xcconfig"; sourceTree = "<group>"; };
+		44E4CADAA62AFDBD1277845F /* Pods-FitmojiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitmojiTests.debug.xcconfig"; path = "Target Support Files/Pods-FitmojiTests/Pods-FitmojiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E79924C87AB996507CE92C4 /* Pods-Fitmoji-FitmojiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitmoji-FitmojiUITests.release.xcconfig"; path = "Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		634BC845474EC5D0E9D26E07 /* Pods-Fitmoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitmoji.debug.xcconfig"; path = "Target Support Files/Pods-Fitmoji/Pods-Fitmoji.debug.xcconfig"; sourceTree = "<group>"; };
+		6BBF0E1105FF0C1A218AD230 /* Pods-Fitmoji-FitmojiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitmoji-FitmojiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B13E3A5242C0F15008EECBE /* Fitmoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitmoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B13E3A8242C0F15008EECBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +77,7 @@
 		7B13E3C6242C0F17008EECBE /* FitmojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitmojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B13E3CA242C0F17008EECBE /* FitmojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiUITests.swift; sourceTree = "<group>"; };
 		7B13E3CC242C0F17008EECBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B200090EA56529112241EE3 /* Pods_FitmojiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitmojiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B884BE62437D93000517F0F /* FitmojiLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiLoginViewController.swift; sourceTree = "<group>"; };
 		7B884BE82437DA5D00517F0F /* FitmojiChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitmojiChoiceViewController.swift; sourceTree = "<group>"; };
 		7B884BEB2437E0C500517F0F /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +94,11 @@
 		7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewController.swift; sourceTree = "<group>"; };
 		7BDF0705242FC2C800DC6B99 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		81860B82DFEF7C9E0D3A6413 /* Pods-Fitmoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitmoji.release.xcconfig"; path = "Target Support Files/Pods-Fitmoji/Pods-Fitmoji.release.xcconfig"; sourceTree = "<group>"; };
+		C5C9FC7F3D9547E1BD9672E0 /* Pods_Fitmoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitmoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E08C100824491CD700D953C9 /* BitmojiSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmojiSDKViewController.swift; sourceTree = "<group>"; };
+		E08C100D2449280A00D953C9 /* AccountRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegisterViewController.swift; sourceTree = "<group>"; };
+		E08C101124492C4500D953C9 /* HealthRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE41EE541D7DDDD620F99508 /* Pods_Fitmoji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88106BEA9A1F2480B99DBA71 /* Pods_FitmojiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,12 +122,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1430EA67ADAFE3DE963649F /* Pods_Fitmoji_FitmojiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8A80BFFAF2304115D55E9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				634BC845474EC5D0E9D26E07 /* Pods-Fitmoji.debug.xcconfig */,
+				81860B82DFEF7C9E0D3A6413 /* Pods-Fitmoji.release.xcconfig */,
+				6BBF0E1105FF0C1A218AD230 /* Pods-Fitmoji-FitmojiUITests.debug.xcconfig */,
+				4E79924C87AB996507CE92C4 /* Pods-Fitmoji-FitmojiUITests.release.xcconfig */,
+				44E4CADAA62AFDBD1277845F /* Pods-FitmojiTests.debug.xcconfig */,
+				4247E774C5A2858468543126 /* Pods-FitmojiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7B13E39C242C0F15008EECBE = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +149,8 @@
 				7B13E3BE242C0F17008EECBE /* FitmojiTests */,
 				7B13E3C9242C0F17008EECBE /* FitmojiUITests */,
 				7B13E3A6242C0F15008EECBE /* Products */,
+				4D8A80BFFAF2304115D55E9C /* Pods */,
+				82E5965FA891C397FD5262A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				7B13E3A8242C0F15008EECBE /* AppDelegate.swift */,
+				E08C100C244927BA00D953C9 /* registration */,
 				7B13E3AA242C0F15008EECBE /* SceneDelegate.swift */,
 				7B13E3AC242C0F15008EECBE /* ViewController.swift */,
 				7B13E3AE242C0F15008EECBE /* Main.storyboard */,
@@ -208,6 +245,26 @@
 			path = challenges;
 			sourceTree = "<group>";
 		};
+		82E5965FA891C397FD5262A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5C9FC7F3D9547E1BD9672E0 /* Pods_Fitmoji.framework */,
+				2F2435D8986F0CFD2AF0A693 /* Pods_Fitmoji_FitmojiUITests.framework */,
+				7B200090EA56529112241EE3 /* Pods_FitmojiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E08C100C244927BA00D953C9 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				E08C100824491CD700D953C9 /* BitmojiSDKViewController.swift */,
+				E08C100D2449280A00D953C9 /* AccountRegisterViewController.swift */,
+				E08C101124492C4500D953C9 /* HealthRegisterViewController.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B13E3CF242C0F17008EECBE /* Build configuration list for PBXNativeTarget "Fitmoji" */;
 			buildPhases = (
+				288FF90457B42F9B90B59806 /* [CP] Check Pods Manifest.lock */,
 				7B13E3A1242C0F15008EECBE /* Sources */,
 				7B13E3A2242C0F15008EECBE /* Frameworks */,
 				7B13E3A3242C0F15008EECBE /* Resources */,
+				F4CAADF00E8907DE85839B8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B13E3D2242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiTests" */;
 			buildPhases = (
+				4420549F5C85AE3A3B1A789A /* [CP] Check Pods Manifest.lock */,
 				7B13E3B7242C0F17008EECBE /* Sources */,
 				7B13E3B8242C0F17008EECBE /* Frameworks */,
 				7B13E3B9242C0F17008EECBE /* Resources */,
@@ -250,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B13E3D5242C0F17008EECBE /* Build configuration list for PBXNativeTarget "FitmojiUITests" */;
 			buildPhases = (
+				015F4234F7F924AE4F83A0CE /* [CP] Check Pods Manifest.lock */,
 				7B13E3C2242C0F17008EECBE /* Sources */,
 				7B13E3C3242C0F17008EECBE /* Frameworks */,
 				7B13E3C4242C0F17008EECBE /* Resources */,
+				D0D3A0E9B1A91EBF51119661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +399,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		015F4234F7F924AE4F83A0CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitmoji-FitmojiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		288FF90457B42F9B90B59806 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitmoji-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4420549F5C85AE3A3B1A789A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitmojiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0D3A0E9B1A91EBF51119661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitmoji-FitmojiUITests/Pods-Fitmoji-FitmojiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4CAADF00E8907DE85839B8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitmoji/Pods-Fitmoji-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitmoji/Pods-Fitmoji-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitmoji/Pods-Fitmoji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B13E3A1242C0F15008EECBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -345,6 +510,8 @@
 				7B884BF12438CEB700517F0F /* FriendsViewController.swift in Sources */,
 				7B9D19A2243A5BB1003206B4 /* ChallengesViewController.swift in Sources */,
 				7B884BE92437DA5D00517F0F /* FitmojiChoiceViewController.swift in Sources */,
+				E08C100E2449280A00D953C9 /* AccountRegisterViewController.swift in Sources */,
+				E08C100924491CD700D953C9 /* BitmojiSDKViewController.swift in Sources */,
 				7B884BE72437D93000517F0F /* FitmojiLoginViewController.swift in Sources */,
 				7B884BEC2437E0C500517F0F /* ExercisesViewController.swift in Sources */,
 				7B9D199E243A5107003206B4 /* ChallengersViewController.swift in Sources */,
@@ -358,6 +525,7 @@
 				7B9D199A24395F35003206B4 /* LeaderboardViewController.swift in Sources */,
 				7B9D19A4243A6BF6003206B4 /* NewChallengeViewController.swift in Sources */,
 				7B13E3AB242C0F15008EECBE /* SceneDelegate.swift in Sources */,
+				E08C101224492C4500D953C9 /* HealthRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +696,7 @@
 		};
 		7B13E3D0242C0F17008EECBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634BC845474EC5D0E9D26E07 /* Pods-Fitmoji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +715,7 @@
 		};
 		7B13E3D1242C0F17008EECBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81860B82DFEF7C9E0D3A6413 /* Pods-Fitmoji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +734,7 @@
 		};
 		7B13E3D3242C0F17008EECBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E4CADAA62AFDBD1277845F /* Pods-FitmojiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -586,6 +757,7 @@
 		};
 		7B13E3D4242C0F17008EECBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4247E774C5A2858468543126 /* Pods-FitmojiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -608,6 +780,7 @@
 		};
 		7B13E3D6242C0F17008EECBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BBF0E1105FF0C1A218AD230 /* Pods-Fitmoji-FitmojiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,6 +801,7 @@
 		};
 		7B13E3D7242C0F17008EECBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E79924C87AB996507CE92C4 /* Pods-Fitmoji-FitmojiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
