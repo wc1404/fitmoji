@@ -20,7 +20,7 @@ class AccountRegisterViewController: UIViewController {
         username.clearsOnBeginEditing = true
         password.clearsOnBeginEditing = true
         [username, password].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
-        //Query can go here to retrive email, username, and password text.
+
     }
     
     @objc func editingChanged(_ textField: UITextField) {
@@ -32,6 +32,7 @@ class AccountRegisterViewController: UIViewController {
             self.signupButton.isEnabled = false
             return
         }
+        //Query can go here to retrive email, username, and password text.
         signupButton.isEnabled = true
     }
 }

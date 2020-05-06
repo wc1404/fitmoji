@@ -441,6 +441,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="AIL-UK-mDQ" kind="show" id="elZ-zC-Maf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -448,7 +451,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="lze-bS-BNk"/>
                     <connections>
-                        <segue destination="AIL-UK-mDQ" kind="show" id="4xE-qU-8WO"/>
+                        <outlet property="login" destination="DzK-p3-nz1" id="2cJ-UQ-cYp"/>
+                        <outlet property="password" destination="c9R-3s-rDs" id="dCT-x6-0Sx"/>
+                        <outlet property="username" destination="gng-0g-wDa" id="R7t-cz-vJY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oTb-bh-vZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -841,6 +846,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="D2Q-cE-u6z"/>
+        <segue reference="elZ-zC-Maf"/>
     </inferredMetricsTieBreakers>
 </document>

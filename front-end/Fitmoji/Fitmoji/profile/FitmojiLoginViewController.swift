@@ -9,22 +9,26 @@
 import UIKit
 
 class FitmojiLoginViewController: UIViewController {
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var login: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        login.isEnabled = false
+        username.clearsOnBeginEditing = true
+        password.clearsOnBeginEditing = true
+        [username, password].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func editingChanged(_ textField: UITextField) {
+        guard
+            let user = self.username.text, !user.isEmpty,
+            let pass = self.password.text, !pass.isEmpty
+        else{
+            self.login.isEnabled = false
+            return
+        }
+        //Query code can go here to determine if the username and password entered is valid.
+        login.isEnabled = true
     }
-    */
-
 }
