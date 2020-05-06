@@ -2,27 +2,26 @@
 
 module.exports = {
   write: true,
-  plugin: 'autod-egg',
   prefix: '^',
-  devprefix: '^',
-  exclude: [
-    'test/fixtures',
-    'coverage',
+  plugin: 'autod-egg',
+  test: [
+    'test',
   ],
   dep: [
     'egg',
+    'egg-sequelize',
     'egg-scripts',
   ],
   devdep: [
-    'autod',
-    'autod-egg',
     'egg-bin',
-    'tslib',
-    'typescript',
+    'autod',
+    'eslint',
+    'eslint-config-egg',
+    'autod-egg',
+    'factory-girl',
+    'sequelize-cli',
   ],
-  keep: [
+  exclude: [
+    './test/fixtures',
   ],
-  semver: [
-  ],
-  test: 'scripts',
 };

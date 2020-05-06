@@ -1,4 +1,4 @@
-use DataStuffNotReal; -- Change to Database Name
+use fitmoji; -- Change to Database Name
 
 CREATE TABLE users (
   user_id Int AUTO_INCREMENT,

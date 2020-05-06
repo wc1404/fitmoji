@@ -1,33 +1,34 @@
-# hackernews-async-ts
+# fitmoji
 
-[Hacker News](https://news.ycombinator.com/) showcase using typescript && egg
-
-## QuickStart
-
-### Development
+## Development
 
 ```bash
-$ npm i
-$ npm run dev
-$ open http://localhost:7001/
+# install dependencies
+npm install
+# start
+npm run dev
+
+# generate migration file
+npx sequelize migration:generate
+# migrate up
+npx sequelize db:migrate
+# migrate up for test database
+NODE_ENV=test npx sequelize db:migrate
+# migrate down
+npx sequelize db:migrate:undo
+npx sequelize db:migrate:undo:all
+# migrate down for test database
+NODE_ENV=test npx sequelize db:migrate:undo
+NODE_ENV=test npx sequelize db:migrate:undo:all
+
+# run migration and test, for CI environment
+npm run ci
 ```
 
-Don't tsc compile at development mode, if you had run `tsc` then you need to `npm run clean` before `npm run dev`.
+## Documents
 
-### Deploy
-
-```bash
-$ npm run tsc
-$ npm start
-```
-
-### Npm Scripts
-
-- Use `npm run lint` to check code style
-- Use `npm test` to run unit test
-- se `npm run clean` to clean compiled js at development mode once
-
-### Requirement
-
-- Node.js 8.x
-- Typescript 2.8+
+[eggjs sequelize document](https://eggjs.org/zh-cn/tutorials/mysql.html)
+[egg-sequelize](https://github.com/eggjs/egg-sequelize)
+[sequelize](http://docs.sequelizejs.com)
+[sequelize-cli and migrations](http://docs.sequelizejs.com/manual/tutorial/migrations.html)
+[factory-girl](https://github.com/aexmachina/factory-girl)
