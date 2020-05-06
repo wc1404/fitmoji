@@ -49,6 +49,10 @@ class ProfileViewController: UIViewController {
         })
         
         
+        profileView.image = UIImage(named: "user1")!
+        
+        usernameLabel.text = "Rick_Ripped_999"
+        scoreLabel.text = "134"
         
         
     }

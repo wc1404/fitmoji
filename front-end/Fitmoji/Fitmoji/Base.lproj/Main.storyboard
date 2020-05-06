@@ -374,19 +374,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TN8-uJ-H6g">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="TN8-uJ-H6g">
                                 <rect key="frame" x="88" y="132" width="238" height="373"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WwO-j2-yVF">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WwO-j2-yVF">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="268"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-0W-81l">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq9-0W-81l">
                                         <rect key="frame" x="77.5" y="300" width="83" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-jw-eq8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-jw-eq8">
                                         <rect key="frame" x="95.5" y="352.5" width="47.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -396,6 +396,12 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I0k-EF-V5s" firstAttribute="trailing" secondItem="TN8-uJ-H6g" secondAttribute="trailing" constant="88" id="0HH-Fb-Ycp"/>
+                            <constraint firstItem="I0k-EF-V5s" firstAttribute="bottom" secondItem="TN8-uJ-H6g" secondAttribute="bottom" constant="357" id="3yZ-x7-sQx"/>
+                            <constraint firstItem="TN8-uJ-H6g" firstAttribute="top" secondItem="I0k-EF-V5s" secondAttribute="top" constant="44" id="d54-BK-Wg9"/>
+                            <constraint firstItem="TN8-uJ-H6g" firstAttribute="leading" secondItem="I0k-EF-V5s" secondAttribute="leading" constant="88" id="ytR-jc-TNd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="I0k-EF-V5s"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="I6h-1j-SMA"/>
