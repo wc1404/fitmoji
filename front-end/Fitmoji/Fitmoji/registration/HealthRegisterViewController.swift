@@ -21,37 +21,31 @@ class HealthRegisterViewController: UIViewController {
     @IBOutlet weak var continueButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        continueButton.isEnabled = false
+//        continueButton.isEnabled = false
+        height.clearsOnBeginEditing = true
+        weight.clearsOnBeginEditing = true
+        month.clearsOnBeginEditing = true
+        day.clearsOnBeginEditing = true
+        year.clearsOnBeginEditing = true
         if(hasChanged()){
             continueButton.isEnabled = true
         }
-        // Do any additional setup after loading the view.
     }
     func hasChanged() -> Bool{
-        return (fitLabel.text != "0" && bmiLabel.text != "0")
+        return (fitLabel.text != "#" && bmiLabel.text != "#")
     }
     @IBAction func calculateBMI(_ sender: Any) {
-        //        var w = Int(weightInput.text!)!
-        //        var h = Int(heightInput.text!)!
-        //        print(w)
-        //        print(h)
-        //        var sum = ((w / (h * h)) * 703)
-        //        print(sum)
-        //        bmiLabel.text = String(sum)
+        let weightKg = Double(weight.text!)! * 0.45359237
+        let heightMeter = Double(height.text!)! * 0.0254
+        let bmi = weightKg / pow(heightMeter, 2)
+        let shortenedBmi = String(format: "%.1f", bmi)
+        bmiLabel.text = String(shortenedBmi)
+        //Query code to retrive bmi can go here.
     }
     
     @IBAction func calcFit(_ sender: Any) {
-        //Code to determine the fitness level based on the calculated bmi and birthdate
-         //bmiLabel.text This is where the calbulated bmi is saved.
+        //This is a placeholder, real calculations to determine the fitness level need to occur.
+        fitLabel.text = "Beginner"
+        //Query code to retrive fitness level can go here.
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
