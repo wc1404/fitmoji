@@ -20,9 +20,11 @@
     "sequelize-cli": "^4.0.0"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=8.0.0",
+    "npm": "6.11.3"
   },
   "scripts": {
+    "start": "egg-scripts start --title=egg-server-fitmoji",
     "autod": "autod",
     "lint": "eslint .",
     "test": "egg-bin test",
@@ -32,18 +34,12 @@
   "ci": {
     "version": "8"
   },
-  "eslintIgnore": [
-    "coverage",
-    "dist"
-  ],
+  "eslintIgnore": ["coverage", "dist"],
   "repository": {
     "type": "git",
     "url": ""
   },
-  "files": [
-    "lib",
-    "index.js"
-  ],
+  "files": ["lib", "index.js"],
   "author": "zebxu",
   "private": true
 }
