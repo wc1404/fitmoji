@@ -32,6 +32,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var usernameLabel: UILabel!
     
     @IBOutlet weak var scoreLabel: UILabel!
+    
+    @IBOutlet weak var levelLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,11 +50,13 @@ class ProfileViewController: UIViewController {
             }
         })
         
+        let user = Database.users[4]
         
-        profileView.image = UIImage(named: "user1")!
+        profileView.image = user.profilePic
+        usernameLabel.text = user.username
+        scoreLabel.text = user.score.description
+        levelLabel.text = user.fitnessLevel
         
-        usernameLabel.text = "Rick_Ripped_999"
-        scoreLabel.text = "134"
         
         
     }
