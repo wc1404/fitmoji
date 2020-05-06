@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class FitmojiChoiceViewController: UIViewController {
 
     override func viewDidLoad() {

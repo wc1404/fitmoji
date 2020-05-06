@@ -31,6 +31,7 @@
 		7B9D19A4243A6BF6003206B4 /* NewChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */; };
 		7BDF0706242FC2C800DC6B99 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0705242FC2C800DC6B99 /* UserCell.xib */; };
 		7BDF0708242FC47600DC6B99 /* ExerciseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */; };
+		7BEB695524631F4D007E1FBF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEB695424631F4D007E1FBF /* ProfileViewController.swift */; };
 		88106BEA9A1F2480B99DBA71 /* Pods_FitmojiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B200090EA56529112241EE3 /* Pods_FitmojiTests.framework */; };
 		AE41EE541D7DDDD620F99508 /* Pods_Fitmoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C9FC7F3D9547E1BD9672E0 /* Pods_Fitmoji.framework */; };
 		D1430EA67ADAFE3DE963649F /* Pods_Fitmoji_FitmojiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F2435D8986F0CFD2AF0A693 /* Pods_Fitmoji_FitmojiUITests.framework */; };
@@ -94,6 +95,7 @@
 		7B9D19A3243A6BF6003206B4 /* NewChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewChallengeViewController.swift; sourceTree = "<group>"; };
 		7BDF0705242FC2C800DC6B99 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		7BDF0707242FC47600DC6B99 /* ExerciseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseCell.xib; sourceTree = "<group>"; };
+		7BEB695424631F4D007E1FBF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		81860B82DFEF7C9E0D3A6413 /* Pods-Fitmoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitmoji.release.xcconfig"; path = "Target Support Files/Pods-Fitmoji/Pods-Fitmoji.release.xcconfig"; sourceTree = "<group>"; };
 		C5C9FC7F3D9547E1BD9672E0 /* Pods_Fitmoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitmoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E08C100824491CD700D953C9 /* BitmojiSDKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmojiSDKViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				7B884BE62437D93000517F0F /* FitmojiLoginViewController.swift */,
+				7BEB695424631F4D007E1FBF /* ProfileViewController.swift */,
 				7B884BE82437DA5D00517F0F /* FitmojiChoiceViewController.swift */,
 			);
 			path = profile;
@@ -509,6 +512,7 @@
 			files = (
 				7B884BF12438CEB700517F0F /* FriendsViewController.swift in Sources */,
 				7B9D19A2243A5BB1003206B4 /* ChallengesViewController.swift in Sources */,
+				7BEB695524631F4D007E1FBF /* ProfileViewController.swift in Sources */,
 				7B884BE92437DA5D00517F0F /* FitmojiChoiceViewController.swift in Sources */,
 				E08C100E2449280A00D953C9 /* AccountRegisterViewController.swift in Sources */,
 				E08C100924491CD700D953C9 /* BitmojiSDKViewController.swift in Sources */,

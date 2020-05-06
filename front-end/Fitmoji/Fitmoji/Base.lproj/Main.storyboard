@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JiF-BZ-YdG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JiF-BZ-YdG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -369,7 +369,7 @@
         <!--Profile-->
         <scene sceneID="8Sn-wo-HTW">
             <objects>
-                <viewController id="AIL-UK-mDQ" sceneMemberID="viewController">
+                <viewController id="AIL-UK-mDQ" customClass="ProfileViewController" customModule="Fitmoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nbO-hN-ngw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -400,6 +400,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="I6h-1j-SMA"/>
                     <connections>
+                        <outlet property="profileView" destination="WwO-j2-yVF" id="qbG-Uh-6br"/>
+                        <outlet property="scoreLabel" destination="ueo-jw-eq8" id="ahA-1p-4Sp"/>
+                        <outlet property="usernameLabel" destination="fq9-0W-81l" id="6oR-d9-1Kv"/>
                         <segue destination="8zF-gb-siy" kind="show" id="fvD-W6-xtV"/>
                     </connections>
                 </viewController>
