@@ -16,22 +16,22 @@ class AccountRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         signupButton.isEnabled = false
-        if(validateInput(email: email, uname: username, pword: password)){
-            signupButton.isEnabled = true
+        email.clearsOnBeginEditing = true
+        username.clearsOnBeginEditing = true
+        password.clearsOnBeginEditing = true
+        [username, password].forEach({ $0.addTarget(self, action: #selector(editingChanged), for: .editingChanged) })
+        //Query can go here to retrive email, username, and password text.
+    }
+    
+    @objc func editingChanged(_ textField: UITextField) {
+        guard
+            let email = self.email.text, !email.isEmpty,
+            let user = self.username.text, !user.isEmpty,
+            let pass = self.password.text, !pass.isEmpty
+        else{
+            self.signupButton.isEnabled = false
+            return
         }
+        signupButton.isEnabled = true
     }
-    func validateInput(email: UITextField, uname: UITextField, pword: UITextField) -> Bool{
-           //add necessary code to validate login
-           return true
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
