@@ -16,11 +16,13 @@ class NewChallengeViewController: UIViewController {
     
     @IBOutlet weak var tableview: UITableView!
     
-    let challengeTypes = ["Type 1","Type 2", "Type 3"] // Temporary, query actual types.
+    let challengeTypes = Database.challengeTypes
     
     // Add the Friends array
+    var friends = [Database.users[1], Database.users[3]]
     
     // Add the Exercises array
+    var exercises = Database.exercises
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +55,11 @@ class NewChallengeViewController: UIViewController {
 
 extension NewChallengeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // Temporary. Return the number of friends/ exercises
+        if segmentedControl.selectedSegmentIndex == 0 {
+            return exercises.count
+        } else {
+            return friends.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -62,16 +68,20 @@ extension NewChallengeViewController: UITableViewDelegate, UITableViewDataSource
             cell.timestampLabel.isHidden = true
             cell.addButton.isHidden = false
             
+            let ex = exercises[indexPath.row]
+            
             // Access the exercise array at indexPath and configure the cell
+            cell.exerciseNameLabel.text = "\(ex.name) (\(ex.worth))"
             
             return cell
         } else {
             let cell = tableview.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! UserCell
             cell.button.isHidden = false
             cell.scoreLabel.isHidden = true
-            cell.button.titleLabel?.text = "Add"
+            cell.button.setTitle("Add", for: .normal)
             
-            // Access the friend array at indexPath and configure the cell
+            cell.profilePic.image = friends[indexPath.row].profilePic
+            cell.userNameLabel.text = friends[indexPath.row].username
             
             return cell
         }

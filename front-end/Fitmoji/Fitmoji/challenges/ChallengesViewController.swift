@@ -35,11 +35,30 @@ class ChallengesViewController: UIViewController {
 
 extension ChallengesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // Temporary. Return the number of challengers.
+        return 1 // Temporary. Return the number of challengers.
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "challengeCell", for: indexPath) as! ChallengeCell
+        
+        // Most completed
+        let participants = [Database.users[1], Database.users[3]]
+        
+        let exercises = [Database.exercises[0], Database.exercises[1], Database.exercises[2]]
+        
+        let challenge = Database.Challenge(creator: Database.users[4],
+                                           type: "Most Completed",
+                                           totalWorth: 30+23+45,
+                                           participants: participants,
+                                           exercises: exercises)
+        
+        cell.creatorLabel.text = "Creator: \(challenge.creator.username)"
+        cell.totalLabel.text = "Total Worth: \(challenge.totalWorth)"
+        cell.typeLabel.text = "Type: Most Completed"
+        
+        cell.participantsLabel.text = "Participants: NotAdmin, TheRock, TheStone"
+        cell.exercisesLabel.text = "Exercises: Pushups, Jumprope, Sit-ups"
+        
         
         return cell
     }

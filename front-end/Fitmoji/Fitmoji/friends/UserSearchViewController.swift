@@ -15,6 +15,7 @@ class UserSearchViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     // Add a user array..
+    let users = Database.users
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class UserSearchViewController: UIViewController {
 
 extension UserSearchViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // Temporary. Return the number of users
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,6 +47,9 @@ extension UserSearchViewController: UITableViewDataSource, UITableViewDelegate {
         cell.button.titleLabel?.text = "Request"
         
         // Configure the cell with the user at [indexPath.row]
+        cell.profilePic.image = users[indexPath.row].profilePic
+        cell.userNameLabel.text =  users[indexPath.row].username
+        cell.scoreLabel.text = "\(users[indexPath.row].fitnessLevel)" 
         
         
         return cell

@@ -13,6 +13,7 @@ class FriendsViewController: UIViewController {
     @IBOutlet weak var tableview: UITableView!
     
     // Add friend array here
+    var friends = [Database.users[1], Database.users[3]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +36,7 @@ class FriendsViewController: UIViewController {
 
 extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // Temporary.. return the friend count
+        return 2 // Temporary.. return the friend count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -43,7 +44,9 @@ extension FriendsViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.button.isHidden = true
         
-        // Configure the cell with the friend at [indexPath.row]
+        cell.profilePic.image = friends[indexPath.row].profilePic
+        cell.userNameLabel.text =  friends[indexPath.row].username
+        cell.scoreLabel.text = "\(friends[indexPath.row].fitnessLevel) (\(friends[indexPath.row].score))"
         
         
         return cell

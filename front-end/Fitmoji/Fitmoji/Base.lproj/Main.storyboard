@@ -409,13 +409,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="I0k-EF-V5s"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="I6h-1j-SMA"/>
+                    <navigationItem key="navigationItem" title="Profile" id="I6h-1j-SMA">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="BpQ-VG-4zM">
+                            <connections>
+                                <segue destination="8zF-gb-siy" kind="show" id="VwA-kq-k3X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="levelLabel" destination="8nJ-Zh-Vvx" id="TOc-3D-yrG"/>
                         <outlet property="profileView" destination="WwO-j2-yVF" id="qbG-Uh-6br"/>
                         <outlet property="scoreLabel" destination="ueo-jw-eq8" id="ahA-1p-4Sp"/>
                         <outlet property="usernameLabel" destination="fq9-0W-81l" id="6oR-d9-1Kv"/>
-                        <segue destination="8zF-gb-siy" kind="show" id="fvD-W6-xtV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bf-iF-ayk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

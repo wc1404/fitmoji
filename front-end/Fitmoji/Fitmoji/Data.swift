@@ -11,7 +11,7 @@ import UIKit
 
 struct Database {
     
-    let challengeTypes = ["Time Based","Most Completed"]
+    static let challengeTypes = ["Time Based","Most Completed"]
     
     struct User {
         var profilePic: UIImage

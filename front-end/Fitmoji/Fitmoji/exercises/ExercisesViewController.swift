@@ -19,6 +19,7 @@ class ExercisesViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     
     // Initialize exercise array here
+    var history = [Database.Exercise]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,24 +44,40 @@ class ExercisesViewController: UIViewController {
         if segmentedControl.selectedSegmentIndex == 0 {
             // Query all existing admin-cteated exercises using the search text.
             // If no search text, get all exercises
+            history = Database.exercises
         } else {
             // Query the exercises of the user's log using the search text.
             // If no search text, get all logs.
+            history = [Database.exercises[0],Database.exercises[1],Database.exercises[3]]
+            for i in 0..<history.count {
+                history[i].timestamp = Date()
+            }
         }
         tableview.reloadData()
     }
     
     func calculateScore() -> Int {
-        return 0 // Temporary, get the score..
+        return history.reduce(0) { (result, ex) -> Int in
+            return result + ex.worth
+        }
     }
     
     func updateScoreLabel() {
-        scoreLabel.text = "Total Score: \(calculateScore())"
+        if segmentedControl.selectedSegmentIndex == 0 {
+            scoreLabel.text = ""
+        } else {
+          
+            scoreLabel.text = "Total Score: \(calculateScore())"
+        }
+        tableview.reloadData()
+        
+        
     }
     
     @IBAction func segmentedControlChanged() {
         searchBar.text = nil
         queryExercises()
+        updateScoreLabel()
     }
 
 }
@@ -69,7 +86,7 @@ class ExercisesViewController: UIViewController {
 
 extension ExercisesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3 // Temporary number: Return the number of exercises
+        return history.count // Temporary number: Return the number of exercises
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -77,14 +94,22 @@ extension ExercisesViewController: UITableViewDelegate, UITableViewDataSource {
         // Get the exercise by accessing the exercise array at [indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as! ExerciseCell
         
+        let exercise = history[indexPath.row]
+        cell.exerciseNameLabel.text = exercise.name
+        
         if segmentedControl.selectedSegmentIndex == 0 {
             cell.addButton.isHidden = false
             cell.timestampLabel.isHidden = true
             // Configure the exercise name..
+            
+            
+            
         } else {
             cell.addButton.isHidden = true
             cell.timestampLabel.isHidden = false
             // Configure the exercise name and timestamp..
+            
+            cell.timestampLabel.text = exercise.timestamp?.description
         }
         
         return cell
